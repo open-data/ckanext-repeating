@@ -19,7 +19,7 @@ scheming.presets = ckanext.scheming:presets.json
                    ckanext.repeating:presets.json
 ```
 A repeating field in a scheming schema
-will look something like::
+will look something like:
 
 ```json
 {
@@ -47,7 +47,7 @@ and are updated as items in a list, eg.:
 
 ```json
 {
-  "...": "..."
+  "...": "...",
   "authors": [
     "Person One",
     "Person Two"
