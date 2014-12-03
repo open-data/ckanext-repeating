@@ -62,6 +62,8 @@ def repeating_text(key, data, errors, context):
     for name, text in extras.iteritems():
         if not name.startswith(prefix):
             continue
+        if not text:
+            continue
         index = name.split('-', 1)[1]
         try:
             index = int(index)
