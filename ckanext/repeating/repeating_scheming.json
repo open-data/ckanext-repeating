@@ -1,0 +1,31 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "repeating-test",
+  "about_url": "http://github.com/open-data/ckanext-fluent",
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "label": "Title",
+      "preset": "title",
+      "form_placeholder": "eg. Yellow Submarine"
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. yellow-submarine"
+    },
+    {
+      "field_name": "authors",
+      "label": "Author",
+      "preset": "multiple_text"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "URL",
+      "preset": "resource_url_upload"
+    }
+  ]
+}
