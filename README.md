@@ -25,7 +25,7 @@ will look something like:
 {
   "field_name": "authors",
   "preset": "repeating_text",
-  "label": "Author names",
+  "label": "Author",
   "form_blanks": 3
 }
 ```
