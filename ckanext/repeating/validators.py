@@ -38,7 +38,7 @@ def repeating_text(key, data, errors, context):
         out = []
         for element in value:
             if not isinstance(element, basestring):
-                errors[key].append(_('invalid type for repeating text: %r'
+                errors[key].append(_('invalid type for repeating text: %r')
                     % element)
                 continue
             if isinstance(element, str):
@@ -69,7 +69,7 @@ def repeating_text(key, data, errors, context):
             continue
         found[index] = text
 
-    out = [found[i] for i in sorted(found)]:
+    out = [found[i] for i in sorted(found)]
     data[key] = json.dumps(out)
 
 
