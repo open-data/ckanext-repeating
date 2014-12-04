@@ -1,0 +1,16 @@
+{
+  "scheming_presets_version": 1,
+  "about": "scheming presets for repeating fields",
+  "about_url": "http://github.com/open-data/ckanext-repeating",
+  "presets": [
+    {
+      "preset_name": "repeating_text",
+      "values": {
+        "form_snippet": "repeating_text.html",
+        "display_snippet": "repeating_text.html",
+        "validators": "repeating_text",
+        "output_validators": "repeating_text_output"
+      }
+    }
+  ]
+}
