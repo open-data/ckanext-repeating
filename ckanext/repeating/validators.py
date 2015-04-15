@@ -82,6 +82,8 @@ def repeating_text_output(value):
     """
     if isinstance(value, list):
         return value
+    if value is None:
+        return []
     try:
         return json.loads(value)
     except ValueError:
