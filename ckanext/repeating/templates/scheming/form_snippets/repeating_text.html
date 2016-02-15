@@ -1,7 +1,7 @@
 {% import 'macros/form.html' as form %}
 
 {%- set values = data.get(field.field_name, [])
-    + [''] * field.get(form_blanks, 3) -%}
+    + [''] * field.get('form_blanks', 3) -%}
 {%- for element in values -%}
   {{ form.input(
     field.field_name + '-' ~ loop.index,
