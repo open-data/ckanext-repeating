@@ -21,6 +21,7 @@ def repeating_text(key, data, errors, context):
        fieldname-0 = "Person One"
        fieldname-1 = "Person Two"
     """
+
     # just in case there was an error before our validator,
     # bail out here because our errors won't be useful
     if errors[key]:
@@ -64,7 +65,7 @@ def repeating_text(key, data, errors, context):
             continue
         if not text:
             continue
-        index = name.split('-', 1)[1]
+        index = name.rsplit('-', 1)[1]
         try:
             index = int(index)
         except ValueError:
